@@ -7,7 +7,9 @@ const client = new Client({
     authStrategy: new LocalAuth()
 });
 const iterasi = async () => {
-    const tanggal = moment().utc().format('YYYY-MM-DD HH:mm:ss')
+    
+    const tanggal = moment().local().format('YYYY-MM-DD HH:mm:ss')
+    console.log(tanggal)
     if(tanggal == '2023-09-09 00:00:00'){
         // client.sendMessage('62nomor@c.us', 'pesan')
         client.sendMessage('62nomor@c.us', `Nama lengkap: MAHERZA ALFARIZKI ATHARRAZKA
