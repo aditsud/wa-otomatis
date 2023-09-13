@@ -4,6 +4,9 @@ const { Client, LocalAuth } = require('whatsapp-web.js');
 const moment = require('moment')
 
 const client = new Client({
+    puppeteer: {
+		args: ['--no-sandbox'],
+	},
     authStrategy: new LocalAuth()
 });
 const iterasi = async () => {
