@@ -11,7 +11,10 @@ const client = new Client({
             '--disable-extensions'
         ],
 		args: [
-            '--no-sandbox'
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--no-zygote',
+            '--disable-gpu'
         ],
 
 	},
