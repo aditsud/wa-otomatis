@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "xvfb-run -a --server-args='-screen 0 1280x800x24 -ac -nolisten tcp -dpi 96 +extension RANDR' nodemon index.js"
   },
   "name": "whatsapp-automation",
   "version": "1.0.0",
