@@ -5,7 +5,11 @@ const moment = require('moment')
 
 const client = new Client({
     puppeteer: {
-		args: ['--no-sandbox'],
+		args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox'
+        ],
+
 	},
     authStrategy: new LocalAuth()
 });
