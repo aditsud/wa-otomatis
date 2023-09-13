@@ -5,6 +5,7 @@ const moment = require('moment')
 
 const client = new Client({
     puppeteer: {
+        headless: true,
         executablePath: '/usr/bin/chromium-browser',
         ignoreDefaultArgs: [
             '--disable-extensions'
