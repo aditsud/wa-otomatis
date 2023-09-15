@@ -4,20 +4,20 @@ const { Client, LocalAuth } = require('whatsapp-web.js');
 const moment = require('moment')
 
 const client = new Client({
-    puppeteer: {
-        headless: true,
-        executablePath: '/usr/bin/chromium-browser',
-        ignoreDefaultArgs: [
-            '--disable-extensions'
-        ],
-		args: [
-            '--no-sandbox',
-            '--disable-setuid-sandbox',
-            '--no-zygote',
-            '--disable-gpu'
-        ],
+    // puppeteer: {
+    //     headless: true,
+    //     executablePath: '/usr/bin/chromium-browser',
+    //     ignoreDefaultArgs: [
+    //         '--disable-extensions'
+    //     ],
+	// 	args: [
+    //         '--no-sandbox',
+    //         '--disable-setuid-sandbox',
+    //         '--no-zygote',
+    //         '--disable-gpu'
+    //     ],
 
-	},
+	// },
     authStrategy: new LocalAuth()
 });
 const iterasi = async () => {
